@@ -1,0 +1,30 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  margin: 0;
+  background-color: $white-color !important;
+}
+
+.color-nav{
+  background-color: black ;
+}
+
+.navitem{
+  color: darken(white, 20%) !important;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navitem-brand{
+  color: darken(white, 20%) !important;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.jumbotron{
+  border-radius: 0px !important;
+}
