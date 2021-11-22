@@ -2,19 +2,30 @@ import React, { useEffect, useState } from 'react';
 import Fade from 'react-reveal/Fade';
 import Tilt from 'react-tilt';
 import { Container, Row, Col } from 'react-bootstrap';
-import { RepoData } from '../api';
+import { gitHubCall, RepoData } from '../api';
 import Card from 'react-bootstrap/Card'
+import { UseQueryResult } from 'react-query';
 
 export const Projects =()=> {
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
-  const repo1 = RepoData("weather-app");
-  const repo2 = RepoData("WGUPS");
-  const repo3 = RepoData("Spotify-Clone");
-  const repo4 = RepoData("Inventory-Manager");
-  const repo5 = RepoData("Appointment-Scheduler");
-  const repo6 = RepoData("updated-portfolio");
+
+  const repos = [
+    "weather-app",
+    "WGUPS",
+    "Spotify-Clone",
+    "Inventory-Manager",
+    "Appointment-Scheduler",
+    "updated-portfolio"
+  ]
+  
+  const getData = ()=>{
+    const resp  = RepoData(repos).data;
+    return resp
+  }
+
+  const data = getData()
 
   useEffect(() => {
     if (window.innerWidth > 769) {
@@ -34,22 +45,22 @@ export const Projects =()=> {
           <h2 className="section-title">Projects</h2>
           <br></br>
         </Fade>
-             <Row xs={1} md={2} className="g-4">
+        <Row xs={1} md={2} className="g-4">
                 <Col lg={4} sm={12}>
                   <Card
                   bg="danger" 
                   text="white"
                   style={{ width: '36rem', color:'black' }}>
                     <Card.Header>
-                    {repo1?.data?.name}
+                    {data != undefined ? data[0]?.name : "no"}
                     </Card.Header>
                     <Card.Body>
                       <Card.Text>
-                        {repo1?.data?.description}
+                        {data != undefined ? data[0]?.description : "no"}
                       </Card.Text>
                     </Card.Body>
                     <Card.Footer>
-                      {repo1?.data?.language}
+                      {data != undefined ? data[0]?.language : "no"}
                     </Card.Footer>
                   </Card>
                 </Col>
@@ -59,38 +70,19 @@ export const Projects =()=> {
                   text="white"
                   style={{ width: '36rem', color:'black' }}>
                     <Card.Header>
-                    {repo2?.data?.name}
+                    {data != undefined ? data[1]?.name : "no"}
                     </Card.Header>
                     <Card.Body>
                       <Card.Text>
-                        {repo2?.data?.description}
+                        {data != undefined ? data[1]?.description : "no"}
                       </Card.Text>
                     </Card.Body>
                     <Card.Footer>
-                      {repo2?.data?.language}
+                      {data != undefined ? data[1]?.language : "no"}
                     </Card.Footer>
                   </Card>
                 </Col>
-                <Col lg={4} sm={12}>
-                  <Card
-                  bg="danger" 
-                  text="white"
-                  style={{ width: '36rem', color:'black' }}>
-                    <Card.Header>
-                    {repo3?.data?.name}
-                    </Card.Header>
-                    <Card.Body>
-                      <Card.Text>
-                        {repo3?.data?.description}
-                      </Card.Text>
-                    </Card.Body>
-                    <Card.Footer>
-                      {repo3?.data?.language}
-                    </Card.Footer>
-                  </Card>
-                </Col>
-            </Row>
-            
+            </Row>    
         </div>
       </Container>                  
     </section>
