@@ -9,9 +9,9 @@ export const Projects =()=> {
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
-  const repo1 = RepoData("weather-app")
-  console.log(repo1.data)
-  const data = repo1?.data?.language 
+  const repo1 = RepoData("weather-app");
+  const repo2 = RepoData("WGUPS");
+  const repo3 = RepoData("Spotify-Clone");
 
   useEffect(() => {
     if (window.innerWidth > 769) {
@@ -56,15 +56,15 @@ export const Projects =()=> {
                   text="white"
                   style={{ width: '36rem', color:'black' }}>
                     <Card.Header>
-                    {repo1?.data?.name}
+                    {repo2?.data?.name}
                     </Card.Header>
                     <Card.Body>
                       <Card.Text>
-                        {repo1?.data?.description}
+                        {repo2?.data?.description}
                       </Card.Text>
                     </Card.Body>
                     <Card.Footer>
-                      {repo1?.data?.language}
+                      {repo2?.data?.language}
                     </Card.Footer>
                   </Card>
                 </Col>
@@ -74,15 +74,15 @@ export const Projects =()=> {
                   text="white"
                   style={{ width: '36rem', color:'black' }}>
                     <Card.Header>
-                    {repo1?.data?.name}
+                    {repo3?.data?.name}
                     </Card.Header>
                     <Card.Body>
                       <Card.Text>
-                        {repo1?.data?.description}
+                        {repo3?.data?.description}
                       </Card.Text>
                     </Card.Body>
                     <Card.Footer>
-                      {repo1?.data?.language}
+                      {repo3?.data?.language}
                     </Card.Footer>
                   </Card>
                 </Col>
