@@ -12,6 +12,9 @@ export const Projects =()=> {
   const repo1 = RepoData("weather-app");
   const repo2 = RepoData("WGUPS");
   const repo3 = RepoData("Spotify-Clone");
+  const repo4 = RepoData("Inventory-Manager");
+  const repo5 = RepoData("Appointment-Scheduler");
+  const repo6 = RepoData("updated-portfolio");
 
   useEffect(() => {
     if (window.innerWidth > 769) {
