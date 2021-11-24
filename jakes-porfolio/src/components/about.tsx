@@ -1,6 +1,8 @@
 import React, { useContext, useState, useEffect } from 'react';
 import Fade from 'react-reveal/Fade';
 import { Container, Row, Col } from 'react-bootstrap';
+import ProfilePic from '../assets/profPic.jpg';
+import PDF from '../assets/Jacob-Roseboro-Resume.pdf';
 
 export const About = () =>{
 
@@ -27,7 +29,7 @@ export const About = () =>{
             <Col md={6} sm={12}>
               <Fade bottom duration={600} delay={100} distance="30px">
                 <div className="about-wrapper__image">
-                  <img src={undefined} width='300' alt="about me" className="rounded shadow-lg"></img>
+                  <img src={ProfilePic} width='300' alt="about me" className="rounded shadow-lg"></img>
                 </div>
               </Fade>
             </Col>
@@ -55,7 +57,7 @@ export const About = () =>{
                         target="_blank"
                         rel="noopener noreferrer"
                         className="cta-btn cta-btn--resume"
-                        href ={undefined}>
+                        href ={PDF}>
                         Resume
                       </a>
                     </span>
