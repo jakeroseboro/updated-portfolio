@@ -74,7 +74,7 @@ export const Projects =()=> {
                           }}
                         >
                   <Card
-                  style={{ width: '36rem', color:'black', height:'24rem' ,backgroundColor:'#009fff'}}>
+                  style={{ color:'black', height:'24rem' ,backgroundColor:'#009fff'}}>
                     <Card.Body>
                       <Card.Title style={{fontSize:"20px"}}>{data !== undefined ? data[0]?.name : "no"}</Card.Title>
                       <Card.Subtitle style={{paddingBottom:"20px"}}> {data !== undefined ? data[0]?.language : "no"}</Card.Subtitle>
@@ -107,7 +107,7 @@ export const Projects =()=> {
                           }}
                         >
                 <Card
-                  style={{ width: '36rem', color:'black', height:'24rem' ,backgroundColor:'#009fff'}}>
+                  style={{ color:'black', height:'24rem' ,backgroundColor:'#009fff'}}>
                     <Card.Body>
                       <Card.Title style={{fontSize:"20px"}}>{data !== undefined ? data[1]?.name : "no"}</Card.Title>
                       <Card.Subtitle style={{paddingBottom:"20px"}}> {data !== undefined ? data[1]?.language : "no"}</Card.Subtitle>
@@ -140,7 +140,7 @@ export const Projects =()=> {
                           }}
                         >
                 <Card
-                  style={{ width: '36rem', color:'black', height:'24rem' ,backgroundColor:'#009fff'}}>
+                  style={{  color:'black', height:'24rem' ,backgroundColor:'#009fff'}}>
                     <Card.Body>
                       <Card.Title style={{fontSize:"20px"}}>{data !== undefined ? data[2]?.name : "no"}</Card.Title>
                       <Card.Subtitle style={{paddingBottom:"20px"}}> {data !== undefined ? data[2]?.language : "no"}</Card.Subtitle>
@@ -183,7 +183,7 @@ export const Projects =()=> {
                           }}
                         >
                 <Card
-                  style={{ width: '36rem', color:'black', height:'24rem' ,backgroundColor:'#009fff'}}>
+                  style={{ color:'black', height:'24rem' ,backgroundColor:'#009fff'}}>
                     <Card.Body>
                       <Card.Title style={{fontSize:"20px"}}>{data !== undefined ? data[3]?.name : "no"}</Card.Title>
                       <Card.Subtitle style={{paddingBottom:"20px"}}> {data !== undefined ? data[3]?.language : "no"}</Card.Subtitle>
@@ -216,7 +216,7 @@ export const Projects =()=> {
                           }}
                         >
                 <Card
-                  style={{ width: '36rem', color:'black', height:'24rem' ,backgroundColor:'#009fff'}}>
+                  style={{ color:'black', height:'24rem' ,backgroundColor:'#009fff'}}>
                     <Card.Body>
                       <Card.Title style={{fontSize:"20px"}}>{data !== undefined ? data[4]?.name : "no"}</Card.Title>
                       <Card.Subtitle style={{paddingBottom:"20px"}}> {data !== undefined ? data[4]?.language : "no"}</Card.Subtitle>
@@ -249,7 +249,7 @@ export const Projects =()=> {
                           }}
                         >
                 <Card
-                  style={{ width: '36rem', color:'black', height:'24rem' ,backgroundColor:'#009fff'}}>
+                  style={{  color:'black', height:'24rem' ,backgroundColor:'#009fff'}}>
                     <Card.Body>
                       <Card.Title style={{fontSize:"20px"}}>{data !== undefined ? data[5]?.name : "no"}</Card.Title>
                       <Card.Subtitle style={{paddingBottom:"20px"}}> {data !== undefined ? data[5]?.language : "no"}</Card.Subtitle>

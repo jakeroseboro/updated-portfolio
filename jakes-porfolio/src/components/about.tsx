@@ -42,14 +42,18 @@ export const About = () =>{
                       Governors University. I expect to graduate December 2021.
                   </p>
                   <p className="about-wrapper__info-text">
-          
-                      I have completed several projects with the school, utilizing Java, C++, and MySQL. In my free time, when I am not with 
-                      my wife and daughter, I am learning JavaScript (used to build this site), and Python.
+                    In my free time, when I am not with 
+                      my wife and daughter, I continue practicing TypeScript, JavaScript, and frameworks like React and Angular. I am also learning ML in python. 
                   </p>
                   <p className="about-wrapper__info-text">
-                    
-                      I am currently working as a web manager at Footbridge Media LLC. I am responsible for performing site 
-                      changes and updates utilizing HTML, CSS, JavaScript, PHP, and Bootstrap. I also frequently use MySQL and cPanel.
+                      I am currently working as a full stack software developer at&nbsp;  
+                     <a target="_blank"
+                        rel="noopener noreferrer"
+                        style={{color:'black', textDecoration:'underline'}}
+                        href ={"https://www.oxefit.com/"}>
+                           OxeFit Inc.&nbsp; 
+                      </a>
+                     I am responsible for managing cloud services hosted in Azure. I create and maintain reliable ASP.NET APIs with Mongo database, and I also develop captivating UIs that consume the APIs with frameworks like Angular and React. I also write unit and integration tests for all of these services. 
                   </p>
                   
                     <span className="d-flex mt-3">
