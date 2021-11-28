@@ -13,7 +13,7 @@ export const Skills=()=>{
       </Fade>
         <Fade bottom duration={600} delay={100} distance="30px">
           <div className="contact-wrapper">
-          <Table>
+          <Table responsive>
   <thead>
     <tr>
       <th style={{fontSize:"20px"}}>Languages</th>
