@@ -1,8 +1,8 @@
-import React, { useContext, useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import Fade from 'react-reveal/Fade';
 import { Container, Row, Col } from 'react-bootstrap';
 import ProfilePic from '../assets/profPic.jpg';
-import PDF from '../assets/Jacob-Roseboro-Resume.pdf';
+import PDF from '../assets/Jacob Roseboro Resume.pdf';
 
 export const About = () =>{
 
@@ -53,7 +53,7 @@ export const About = () =>{
                         href ={"https://www.oxefit.com/"}>
                            OxeFit Inc.&nbsp; 
                       </a>
-                     I am responsible for managing cloud services hosted in Azure. I create and maintain reliable ASP.NET APIs with Mongo database, and I also develop captivating UIs that consume the APIs with frameworks like Angular and React. I also write unit and integration tests for all of these services. 
+                     I am responsible for managing cloud services hosted in Azure. I create and maintain reliable REST APIs with ASP.NET and MongoDB, and I also develop captivating UIs that consume the APIs with frameworks like Angular and React. I write unit and integration tests for all of these services using frameworks like Angular testing library, Postman, and Xunit. 
                   </p>
                   
                     <span className="d-flex mt-3">

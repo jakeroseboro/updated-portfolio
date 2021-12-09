@@ -12,8 +12,8 @@ export const Projects =()=> {
   const [isMobile, setIsMobile] = useState(false);
 
   const repos = [
+    "Stock-Prediction-Api",
     "weather-app",
-    "WGUPS",
     "Spotify-Clone",
     "Inventory-Manager",
     "Appointment-Scheduler",
