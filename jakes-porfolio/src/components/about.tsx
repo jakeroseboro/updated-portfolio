@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import Fade from 'react-reveal/Fade';
 import { Container, Row, Col } from 'react-bootstrap';
 import ProfilePic from '../assets/profPic.jpg';
-import PDF from '../assets/Jacob-Roseboro-Resume.pdf';
+import PDF from '../assets/Jacob-Roseboros-Resume.pdf';
 
 export const About = () =>{
 
