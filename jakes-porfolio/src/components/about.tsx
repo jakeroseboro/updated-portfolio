@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import Fade from 'react-reveal/Fade';
 import { Container, Row, Col } from 'react-bootstrap';
-import ProfilePic from '../assets/profPic.jpg';
+import MarketingPic1 from '../assets/marketing.png';
 import PDF from '../assets/Jacob-Roseboros-Resume.pdf';
 
 export const About = () =>{
@@ -23,13 +23,13 @@ export const About = () =>{
       <section id="about">
         <Container>
         <Fade bottom duration={600} delay={100} distance="0px">
-        <h2 className="section-title">About me</h2>
+        <h2 className="section-title">Who We Are</h2>
         </Fade>
           <Row className="about-wrapper">
             <Col md={6} sm={12}>
               <Fade bottom duration={600} delay={100} distance="30px">
                 <div className="about-wrapper__image">
-                  <img src={ProfilePic} width='300' alt="about me" className="rounded shadow-lg"></img>
+                  <img src={MarketingPic1} width='500' alt="about me" className="rounded shadow-lg"></img>
                 </div>
               </Fade>
             </Col>

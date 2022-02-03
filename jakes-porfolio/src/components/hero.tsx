@@ -25,17 +25,17 @@ export const Home =() => {
       <Container>
         <Fade left={isDesktop} bottom={isMobile} duration={600} delay={100} distance="30px">
           <h1 className="hero-title">
-            Hi, my name is
-            <span className="text-color-main"> Jacob Roseboro</span>
+            Hello, we are 
+            <span className="text-color-main"> Stellata.</span>
             <br />
-            I'm a developer from Pensacola, FL.
+            The complete web marketing solution. 
           </h1>
         </Fade>
         <Fade left={isDesktop} bottom={isMobile} duration={600} delay={100} distance="30px">
           <p className="hero-cta">
             <span className="cta-btn cta-btn--hero">
               <Link to="about" smooth duration={1000}>
-                Learn More
+                Get Started
               </Link>
             </span>
           </p>
