@@ -28,6 +28,19 @@ a:hover {
   font-size: $big-font-size;
   font-weight: bold;
   text-transform: uppercase;
+  color: $white-color;
+
+  @include respond(phone) {
+    font-size: 2.8rem;
+  }
+}
+
+.section-title-black{
+  margin: 0px;
+  margin-bottom: 4.5rem;
+  font-size: $big-font-size;
+  font-weight: bold;
+  text-transform: uppercase;
 
   @include respond(phone) {
     font-size: 2.8rem;

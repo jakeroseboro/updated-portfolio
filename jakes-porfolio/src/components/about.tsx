@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import Fade from 'react-reveal/Fade';
 import { Container, Row, Col } from 'react-bootstrap';
 import MarketingPic1 from '../assets/marketing.png';
-import PDF from '../assets/Jacob-Roseboros-Resume.pdf';
 
 export const About = () =>{
 
@@ -18,18 +17,27 @@ export const About = () =>{
         setIsDesktop(false);
       }
     }, []);
+
+    const getWidth = () =>{
+      if(isDesktop){
+        return 500
+      }
+      else{
+        return 300
+      }
+    }
   
     return (
       <section id="about">
         <Container>
         <Fade bottom duration={600} delay={100} distance="0px">
-        <h2 className="section-title">Who We Are</h2>
+        <h2 className="section-title">Web Marketing You Can Trust</h2>
         </Fade>
           <Row className="about-wrapper">
             <Col md={6} sm={12}>
               <Fade bottom duration={600} delay={100} distance="30px">
                 <div className="about-wrapper__image">
-                  <img src={MarketingPic1} width='500' alt="about me" className="rounded shadow-lg"></img>
+                  <img src={MarketingPic1} width={getWidth()} alt="about me" className="rounded shadow-lg"></img>
                 </div>
               </Fade>
             </Col>
@@ -37,34 +45,10 @@ export const About = () =>{
               <Fade left={isDesktop} bottom={isMobile} duration={600} delay={100} distance="30px">
                 <div className="about-wrapper__info">
                   <p className="about-wrapper__info-text">
-                    
-                      I am a software developer based out of Pensacola, Florida. I am obtaining my BS in Computer Science through Western 
-                      Governors University. I expect to graduate December 2021.
+                      Stellata is here to help your small business grow. We specialize in industries ranging from legal services to mom &amp; pop shops. No matter what your small business offers, Stellata is the web marketing solution for you.  
+                      <br/><br/>
+                      Our Complete Marketing Program ensures you have everything you need to watch your business grow. We manage every aspect of your online presence to make sure that you never miss an opportunity to reach a client.
                   </p>
-                  <p className="about-wrapper__info-text">
-                    In my free time, when I am not with 
-                      my wife and daughter, I continue practicing TypeScript, JavaScript, and frameworks like React and Angular. I am also learning ML in python. 
-                  </p>
-                  <p className="about-wrapper__info-text">
-                      I am currently working as a full stack software developer at&nbsp;  
-                     <a target="_blank"
-                        rel="noopener noreferrer"
-                        style={{color:'black', textDecoration:'underline'}}
-                        href ={"https://www.oxefit.com/"}>
-                           OxeFit Inc.&nbsp; 
-                      </a>
-                     I am responsible for managing cloud services hosted in Azure. I create and maintain reliable REST APIs with ASP.NET and MongoDB, and I also develop captivating UIs that consume the APIs with frameworks like Angular and React. I write unit and integration tests for all of these services using frameworks like Angular testing library, Postman, and Xunit. 
-                  </p>
-                  
-                    <span className="d-flex mt-3">
-                      <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="cta-btn cta-btn--resume"
-                        href ={PDF}>
-                        Resume
-                      </a>
-                    </span>
                 </div>
               </Fade>
             </Col>

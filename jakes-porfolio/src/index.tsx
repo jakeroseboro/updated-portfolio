@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import '../src/style/main.scss';
+import "antd/dist/antd.css";
 import App from './App';
 import { QueryClient, QueryClientProvider } from 'react-query';
 const queryClient = new QueryClient();
