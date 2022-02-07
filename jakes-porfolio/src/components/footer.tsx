@@ -7,12 +7,8 @@ export const Footer=()=> {
   return (
     <footer className="footer navbar-static-bottom">
       <Container>
-        <div className="social-links text-center">
-        <a href="https://github.com/jakeroseboro"><Github color="white" size={35}/></a>
-        <a href="https://www.linkedin.com/in/jacobroseboro/"><Linkedin color="white" size={35}/></a>
-        </div>
-        <hr />
-        <p className="footer__text">© {new Date().getFullYear()} - Jacob Roseboro</p>
+        <hr style={{width: "100%"}} />
+        <p className="footer__text d-flex justify-content-center">© {new Date().getFullYear()} - Stellata</p>
       </Container>
     </footer>
   );
