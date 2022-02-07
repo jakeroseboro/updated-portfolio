@@ -56,7 +56,7 @@ export const Projects =()=> {
                     <Card.Img variant='top' src={Website} height={300}/>
                     <Card.Body style={{height:"400px"}}>
                       <Card.Text>
-                        <h2>Custom Web Development</h2>
+                        <h2><b>Custom Web Development</b></h2>
                         <p>We will build you a site tailored specifically for your business.</p>
                         <p>We don't just build portfolio sites, we can build you a fully functional web application that can drive business growth</p>
                         <p>Our web development specialties include:</p>
@@ -88,7 +88,7 @@ export const Projects =()=> {
                     <Card.Img variant='top' src={Seo} height={300}/>
                     <Card.Body style={{height:"400px"}}>
                     <Card.Text>
-                        <h2>Search Engine Optimization</h2>
+                        <h2><b>Search Engine Optimization</b></h2>
                         <p>It's important to get your site in front of as many clients as possible.</p>
                         <p>No matter what services you offer or how good at them you are, if clients can't find your website, they are not going to give you their business.</p>
                         <p>Most clients searching for a service are unlikely to go past the first page of results for their search. That's exactly where Stellata will get your site ranking.</p>
@@ -117,7 +117,7 @@ export const Projects =()=> {
                     <Card.Img variant='top' src={MarketAnalysis} height={300}/>
                     <Card.Body style={{height:"400px"}}>
                     <Card.Text>
-                        <h2>Complete Marketing Support</h2>
+                        <h2><b>Complete Marketing Support</b></h2>
                         <p>Not good at advertising your service? No problem. Stellata offers custom marketing catered directly to your business needs. We offer complete market analysis to learn what works best for the industry you're in. </p>
                         <p>You will work closely with your assigned marketer and receive frequent check ins on the health of your site.</p>
                         <p>Site metrics include:</p>

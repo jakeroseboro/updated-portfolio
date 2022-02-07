@@ -4,7 +4,10 @@ import { Container} from "react-bootstrap";
 import emailjs from "emailjs-com";
 import { Form, Input, Button, message } from "antd";
 
+
 export const Skills = () => {
+  const [form] = Form.useForm();
+
   const handleSubmit = (e: any) => {
     emailjs
       .send(
@@ -19,6 +22,7 @@ export const Skills = () => {
         "user_vbjYlIJevYSxTjDOUmDQ0"
       )
       .then((_) => {
+        form.resetFields()
         return message.success("Email sent!");
       })
       .catch((_) => {
@@ -39,6 +43,7 @@ export const Skills = () => {
               onFinish={handleSubmit}
               labelCol={{ span: 4 }}
               wrapperCol={{ span: 16 }}
+              form={form}
             >
               <Form.Item
                 name="from_first_name"
